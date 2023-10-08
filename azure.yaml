@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/alpha/azure.yaml.json
+
+name: asa-samples-acme-fitness-store
+metadata:
+  template: asa-samples-acme-fitness-store@0.0.1-beta
+services:
+  acme-cart:
+    project: ./apps/acme-cart
+    host: springapp
+    language: python
+    resourceName: ${ASA_INSTANCE_NAME}
+    spring:
+      pythonVersion: 3.7.*
+      builderName: acme-builder
+#  acme-order:
+#    project: ./apps/acme-order
+#    host: springapp
+#    language: csharp
+#    resourceName: ${ASA_INSTANCE_NAME}
+#    spring:
+#      builderName: acme-builder
+#  acme-shopping:
+#    project: ./apps/acme-shopping
+#    host: springapp
+#    language: js
+#    resourceName: ${ASA_INSTANCE_NAME}
+#    spring:
+#      nodeVersion: 18.*
+#      builderName: acme-builder
+#  acme-catalog :
+#    project: ./apps/acme-catalog
+#    host: springapp
+#    language: java
+#    spring:
+#      jvmVersion: 17
+

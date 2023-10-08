@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "principalId": {
+      "value": "${AZURE_PRINCIPAL_ID}"
+    },
+    "cartBuildResultId": {
+      "value": "${SERVICE_ACME_CART_BUILD_RESULT_ID=<default>}"
+    },
+    "orderBuildResultId": {
+      "value": "${SERVICE_ACME_ORDER_BUILD_RESULT_ID=<default>}"
+    },
+    "shoppingBuildResultId": {
+      "value": "${SERVICE_ACME_SHOPPING_BUILD_RESULT_ID=<default>}"
+    }
+  }
+}
